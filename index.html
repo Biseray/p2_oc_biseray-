@@ -6,34 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booki</title>
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
     <header>
       <img src="images/logo/Booki.png" alt="logoBooki">
-      <a href="#">Hébergement</a>
-      <a href="#">Activités</a>
+      <a href="#Hébergement">Hébergement</a>
+      <a href="#Activités">Activités</a>
     </header>
-    <section>
+    <main>
       <h1>Trouver votre hébergement pour des vacances de rêves</h1>
       <p>En plein centre ville ou pleine nature</p>
+      <form action="searchbar">
       <i class="fa-solid fa-location-dot"></i>
       <input type="search" placeholder="Marseille, France" class="search">
-      <input type="submit" value="Recherche" class="recherche">
+      <p>Recherche</p>
+    </form>
       <h2>Filtres </h2>
       <i class="fa-solid fa-money-bill-wave"></i>
-      <input type="submit" value="Économique">
+       <p>Économique</p>
       <i class="fa-sharp fa-solid fa-child-reaching"></i>
-      <input type="submit" value="Familial">
+      <p>Familial</p>
       <i class="fa-sharp fa-solid fa-heart"></i>
-      <input type="submit" value="Romantique">
+      <p>Romantique</p>
       <i class="fa-solid fa-dog"></i>
-      <input type="submit" value="Animaux autorisés">
+      <p>Animaux autorisés</p>
       <br>
       <i class="fa-solid fa-info"></i>
       <p> Plus de 500 Logements sont disponibles dans cette ville </p>
-    </section>
+    </main>
     <section>
-      <h3>Hébergement à Marseille</h3>
+      <h3 id="Hébergement">Hébergement à Marseille</h3>
       <article>
         <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="chambre-avec-lit-superposé">
         <h4>Auberge La Cannebière</h4>
@@ -140,7 +143,7 @@
       </article>
     </aside>
     <section>
-      <h3>Activités à Marsseille</h3>
+      <h3 id="Activités">Activités à Marsseille</h3>
       <article>
         <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="vieux-port">
         <h4>Vieux port</h4>
