@@ -1,0 +1,475 @@
+@font-face {
+	font-family: 'Raleway';
+	src: url("fonts/static/Raleway-Black.ttf");
+	src: url("fonts/static/Raleway-Bold.ttf");
+	src: url("fonts/static/Raleway-Medium.ttf");
+	src: url("fonts/static/Raleway-Regular.ttf");
+	src: url("fonts/static/Raleway-Medium.ttf");
+
+
+}
+
+body {
+	margin-top: 0em;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1300px;
+	font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+/* header + nav */
+header {
+	padding: 1em;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header img {
+	width: 8em;
+}
+
+nav ul {
+	display: inline-flex;
+	list-style: none;
+}
+
+nav li {
+	padding-right: 1em;
+}
+
+nav a {
+	color: black;
+	text-decoration: none;
+	padding: 0.3em;
+	cursor: pointer;
+
+}
+
+nav a[data-active="true"] {
+	border-top: 4px #0065FC solid;
+	color: #0065FC;
+	padding-top: 2.2em;
+
+}
+
+nav a:hover {
+
+	border-top: 4px #0065FC solid;
+	padding-top: 2.2em;
+	color: #0065FC;
+}
+
+/* section 1  */
+section p {
+	padding: 0%;
+	margin: 0%;
+}
+
+/* searchbar  */
+form {
+	display: flex;
+	align-items: center;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+form i {
+	background-color: #f2f2f2;
+	padding: 1.2em;
+	border-radius: 1em 0em 0em 1em;
+	border: #f2f2f2 2px solid;
+
+}
+
+form .search {
+	padding: 1.1em;
+	border: #f2f2f2 2px solid;
+
+}
+
+form p {
+	padding: 1.2em;
+	background-color: #0065FC;
+	border-radius: 0em 1em 1em 0em;
+	color: aliceblue;
+	font-weight: bold;
+}
+
+.search::placeholder {
+	color: #000000;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+/* filters */
+
+
+main p {
+	padding: 1em;
+	padding-right: 1.5em;
+	margin: 0em;
+	font-weight: bold;
+}
+
+main {
+	align-items: center;
+	display: flex;
+
+}
+
+.filtresbtn i {
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	height: 3em;
+	width: 3em;
+	color: #0065FC;
+	background-color: #DEEBFF;
+	border-radius: 5em;
+	border: #DEEBFF solid 1px;
+}
+
+.filtresbtn {
+	border: #f2f2f2 solid 2px;
+	display: flex;
+	align-items: center;
+	border-radius: 10em;
+	border-left: none;
+	margin: 1em;
+}
+
+.filtresbtn:hover {
+	background-color: #deebff49;
+}
+
+#info {
+	display: flex;
+	align-items: center;
+
+}
+
+#info i {
+	color: #0065FC;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 2em;
+	width: 2em;
+	border: #f2f2f2 2px solid;
+	border-radius: 100PX;
+}
+
+#info p {
+	padding: 1em;
+
+}
+
+/* section hébergement  */
+
+.hébergement {
+	display: flex;
+	flex-direction: column;
+	background-color: #f2f2f2;
+	border-radius: 1em;
+	padding: 1em;
+	width: 100%;
+}
+
+/* card article */
+.container
+
+/* listapartment + aside  */
+	{
+
+	display: flex;
+    width: 100%;
+
+}
+
+#containerarticle {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap-reverse;
+	width: 800px;
+    position: relative;
+  
+  
+}
+
+.card {
+	margin: 1em;
+	width: 220px;
+    display: block;
+    max-width: 100%;
+    min-width: auto;
+	padding: 4px;
+	background-color: white;
+	box-shadow: 0px 5px 10px rgb(56, 56, 56);
+	border-radius: 1em 1em 1em 1em;
+}
+
+.hébergement a {
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+}
+
+.card-image {
+	height: 110px;
+    width: 100%;
+	position: relative;
+	overflow: hidden;
+
+}
+
+
+.card-image img {
+	object-fit: cover;
+	position: absolute;
+	border-radius: 1em 1em 0em 0em;
+	max-width: 100%;
+	width: 100%;
+	max-height: 100%;
+}
+
+.card-body {
+	text-align: left;
+	box-sizing: border-box;
+	padding-left: 1em;
+	margin-bottom: 2em;
+}
+
+.card-body h4 {
+	margin-bottom: 1%;
+	margin-top: 4%;
+	padding: 0%;
+	font-size: 1.2em;
+	font-weight: bold;
+
+
+}
+
+.card-body p {
+
+	padding-bottom: 1em;
+	font-size: 1em;
+	font-weight: normal;
+}
+
+.star {
+	font-size: 0.8em;
+}
+
+.card-body {
+	margin-bottom: 2%;
+	font-size: 0.8em;
+}
+
+.starblue {
+	color: #0065FC;
+}
+
+.stargray {
+	color: rgba(44, 44, 44, 0.301);
+}
+
+.otherapartement {
+	margin-top: 3em;
+	margin-left: 1em;
+
+}
+
+
+/* aside */
+
+
+aside {
+	display: flex;
+	background-color: #f2f2f2;
+	border-radius: 1em;
+	padding: 1em;
+	width: 100%;
+	margin-left: 2em;
+
+}
+
+#titlepopular {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.sectionpopular {
+	display: flex;
+	flex-direction: column;
+	margin: 2em;
+}
+
+
+/* list popular */
+
+.card-container {
+
+	width: 320px;
+	margin: 1em;
+	padding: 5px;
+	background-color: white;
+	box-shadow: 0px 5px 10px rgb(56, 56, 56);
+	border-radius: 1em 1em 1em 1em;
+	
+}
+
+.card-popular-apartment {
+	display: flex;
+
+}
+
+.card2-image {
+	width: 40%;
+	height: 120px;
+	position: relative;
+	overflow: hidden;
+}
+
+
+.card2-image img {
+	width: 100%;
+	min-height: 100%;
+	object-fit: cover;
+	border-radius: 1em 0em 0em 1em;
+}
+
+.card2-body {
+	margin-right: 8px;
+	padding-left: 5px;
+	width: 60%;
+
+}
+
+
+.card2-body h4 {
+	margin-top: 2%;
+	margin-bottom: 2%;
+	margin-right: 8px;
+	margin-top: 4%;
+
+	padding: 0%;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.card2-body p {
+	padding-left: 3px;
+	padding-bottom: 1em;
+	font-size: 0.8em;
+	font-weight: normal;
+}
+
+.star2 {
+	font-size: 0.6em;
+	padding-top: 1em;
+}
+
+/* listactivity */
+
+.card-activity1 {
+
+
+	width: 300px;
+	box-shadow: 0px 5px 10px rgba(56, 56, 56, 0.315);
+	border-radius: 1em 1em 1em 1em;
+}
+
+.activityimg {
+	height: 400px;
+	position: relative;
+	overflow: hidden;
+
+}
+
+.activityimg img {
+	object-fit: cover;
+	position: absolute;
+	border-radius: 1em 1em 0em 0em;
+	max-width: 100%;
+	width: 100%;
+	max-height: 100%;
+	height: 500px;
+}
+
+a {
+	text-decoration: none;
+	color: #000000;
+}
+
+.activitytitle {
+	padding: 1px;
+	margin-left: 10px;
+}
+
+
+.card-activity2 {
+
+	width: 300px;
+	box-shadow: 0px 5px 10px rgba(56, 56, 56, 0.315);
+	border-radius: 1em 1em 1em 1em;
+
+}
+
+.activityimg2 img {
+	object-fit: cover;
+	position: absolute;
+	border-radius: 1em 1em 0em 0em;
+	max-width: 100%;
+	width: 100%;
+	max-height: 100%;
+	height: 600px;
+
+
+}
+
+.activityimg2 {
+	height: 150px;
+	position: relative;
+	overflow: hidden;
+}
+
+
+.listactivity {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+
+
+}
+
+.overlaycard {
+	display: flex;
+	flex-direction: column;
+	gap: 3em
+}
+
+footer {
+	margin-top: 4em;
+	display: flex;
+	justify-content: space-evenly;
+	background-color: #f2f2f2;
+	padding-bottom: 2em;
+}
+
+footer ul {
+	list-style: none;
+	padding: 0px;
+
+}
+
+footer li {
+	padding: 4px;
+
+}
+
+footer h5 {
+	font-size: 1em;
+
+}
+
