@@ -34,30 +34,34 @@ nav ul {
 	list-style: none;
 }
 
-nav li {
-	padding-right: 1em;
-}
+
 
 nav a {
 	color: black;
 	text-decoration: none;
 	padding: 0.3em;
 	cursor: pointer;
+	padding-right: 1em;
+	padding-left: 1em;
 
 }
 
 nav a[data-active="true"] {
+	
 	border-top: 4px #0065FC solid;
+	padding-top: 2.1em;
 	color: #0065FC;
-	padding-top: 2.2em;
-
+	padding-right: 1em;
+	padding-left: 1em;
 }
 
 nav a:hover {
-
+	
 	border-top: 4px #0065FC solid;
-	padding-top: 2.2em;
+	padding-top: 2.1em;
 	color: #0065FC;
+	padding-right: 1em;
+	padding-left: 1em;
 }
 
 /* section 1  */
@@ -103,6 +107,7 @@ form p {
 }
 
 /* filters */
+
 
 
 main p {
@@ -177,9 +182,13 @@ main {
 }
 
 /* card article */
+article:hover {
+	transform: scale(1.02);
+}
+
 .container
 
-/* listapartment + aside  */
+/* listapartment + listpopularapartment  */
 	{
 
 	display: flex;
@@ -196,27 +205,26 @@ main {
   
   
 }
+.hébergement a {
+	color: rgb(0, 0, 0);
+	text-decoration: none;
 
+}
+
+/* card hébergement  */
 .card {
 	margin: 1em;
 	width: 220px;
-    display: block;
-    max-width: 100%;
-    min-width: auto;
 	padding: 4px;
 	background-color: white;
 	box-shadow: 0px 5px 10px rgb(56, 56, 56);
 	border-radius: 1em 1em 1em 1em;
 }
 
-.hébergement a {
-	color: rgb(0, 0, 0);
-	text-decoration: none;
-}
-
 .card-image {
 	height: 110px;
     width: 100%;
+	border-radius: 1em 1em 0em 0em;
 	position: relative;
 	overflow: hidden;
 
@@ -226,7 +234,6 @@ main {
 .card-image img {
 	object-fit: cover;
 	position: absolute;
-	border-radius: 1em 1em 0em 0em;
 	max-width: 100%;
 	width: 100%;
 	max-height: 100%;
@@ -279,19 +286,15 @@ main {
 
 }
 
-
-/* aside */
-
-
-aside {
-	display: flex;
-	background-color: #f2f2f2;
-	border-radius: 1em;
-	padding: 1em;
-	width: 100%;
-	margin-left: 2em;
-
+span {
+	font-weight: bold;
 }
+
+
+/* list popular */
+
+
+
 
 #titlepopular {
 	display: flex;
@@ -302,11 +305,13 @@ aside {
 .sectionpopular {
 	display: flex;
 	flex-direction: column;
-	margin: 2em;
+	
+	background-color: #f2f2f2;
+	border-radius: 1em;
+	padding: 1em;
+	width: 100%;
+	margin-left: 2em;
 }
-
-
-/* list popular */
 
 .card-container {
 
@@ -332,8 +337,8 @@ aside {
 }
 
 
-.card2-image img {
-	width: 100%;
+.card-popular-apartment img {
+	width: 40%;
 	min-height: 100%;
 	object-fit: cover;
 	border-radius: 1em 0em 0em 1em;
@@ -346,13 +351,10 @@ aside {
 
 }
 
-
 .card2-body h4 {
-	margin-top: 2%;
 	margin-bottom: 2%;
 	margin-right: 8px;
 	margin-top: 4%;
-
 	padding: 0%;
 	font-size: 1em;
 	font-weight: bold;
@@ -383,13 +385,15 @@ aside {
 .activityimg {
 	height: 400px;
 	position: relative;
-	overflow: hidden;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 1em 1em 0em 0em;
 
 }
 
 .activityimg img {
 	object-fit: cover;
-	position: absolute;
+	position: relative;
 	border-radius: 1em 1em 0em 0em;
 	max-width: 100%;
 	width: 100%;
@@ -418,10 +422,8 @@ a {
 
 .activityimg2 img {
 	object-fit: cover;
-	position: absolute;
-	border-radius: 1em 1em 0em 0em;
+	position: relative;
 	max-width: 100%;
-	width: 100%;
 	max-height: 100%;
 	height: 600px;
 
@@ -431,7 +433,9 @@ a {
 .activityimg2 {
 	height: 150px;
 	position: relative;
-	overflow: hidden;
+	object-fit: cover;
+	width: 100%;
+	border-radius: 1em 1em 0em 0em;
 }
 
 
@@ -473,3 +477,21 @@ footer h5 {
 
 }
 
+@media screen and  (max-width:992px) {
+
+	body {
+		margin: auto;
+	}
+
+	#part1 {
+		margin: 1em;
+}
+		main
+	 {
+		margin: 2em;
+		
+	}
+	
+
+
+}
