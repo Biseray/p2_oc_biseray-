@@ -26,7 +26,7 @@ header {
 }
 
 header img {
-	width: 8em;
+	width: 6em;
 }
 
 nav ul {
@@ -40,25 +40,17 @@ nav a {
 	color: black;
 	text-decoration: none;
 	padding: 0.3em;
-	cursor: pointer;
-	padding-right: 1em;
-	padding-left: 1em;
-
-}
-
-nav a[data-active="true"] {
 	
-	border-top: 4px #0065FC solid;
-	padding-top: 2.1em;
-	color: #0065FC;
 	padding-right: 1em;
 	padding-left: 1em;
+
 }
+
 
 nav a:hover {
 	
 	border-top: 4px #0065FC solid;
-	padding-top: 2.1em;
+	padding-top: 1.8em;
 	color: #0065FC;
 	padding-right: 1em;
 	padding-left: 1em;
@@ -120,6 +112,7 @@ main p {
 main {
 	align-items: center;
 	display: flex;
+	flex-flow: wrap;
 
 }
 
@@ -173,6 +166,7 @@ main {
 /* section hébergement  */
 
 .hébergement {
+	margin: auto;
 	display: flex;
 	flex-direction: column;
 	background-color: #f2f2f2;
@@ -191,17 +185,27 @@ article:hover {
 /* listapartment + listpopularapartment  */
 	{
 
+	gap: 1em;
 	display: flex;
+	justify-content: center;
     width: 100%;
+	max-width: 100%;
+	min-width: 50%;
+	
 
 }
 
 #containerarticle {
+
 	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap-reverse;
-	width: 800px;
-    position: relative;
+	justify-content: center;
+	flex-wrap: wrap;
+	position: relative;
+	width: 100%;
+	max-width: 100%;
+	min-width: 60px;
+    
   
   
 }
@@ -214,11 +218,13 @@ article:hover {
 /* card hébergement  */
 .card {
 	margin: 1em;
-	width: 220px;
+	width:220px;
 	padding: 4px;
 	background-color: white;
 	box-shadow: 0px 5px 10px rgb(56, 56, 56);
 	border-radius: 1em 1em 1em 1em;
+	max-width: 100%;
+	min-width: 150PX;
 }
 
 .card-image {
@@ -227,12 +233,13 @@ article:hover {
 	border-radius: 1em 1em 0em 0em;
 	position: relative;
 	overflow: hidden;
+	object-fit:cover;
 
 }
 
 
 .card-image img {
-	object-fit: cover;
+	
 	position: absolute;
 	max-width: 100%;
 	width: 100%;
@@ -244,6 +251,8 @@ article:hover {
 	box-sizing: border-box;
 	padding-left: 1em;
 	margin-bottom: 2em;
+	margin-bottom: 2%;
+	font-size: 0.8em;
 }
 
 .card-body h4 {
@@ -264,11 +273,6 @@ article:hover {
 }
 
 .star {
-	font-size: 0.8em;
-}
-
-.card-body {
-	margin-bottom: 2%;
 	font-size: 0.8em;
 }
 
@@ -300,22 +304,28 @@ span {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	margin: 1em;
+	margin-top: 0em;
+	margin-bottom: 0em;
 }
 
+.contenairpopular {
+	display: flex;
+	flex-direction: column;
+}
 .sectionpopular {
 	display: flex;
 	flex-direction: column;
-	
 	background-color: #f2f2f2;
 	border-radius: 1em;
 	padding: 1em;
-	width: 100%;
-	margin-left: 2em;
+	width: 40%;
+	
 }
 
 .card-container {
 
-	width: 320px;
+	width: 300px;
 	margin: 1em;
 	padding: 5px;
 	background-color: white;
@@ -326,6 +336,7 @@ span {
 
 .card-popular-apartment {
 	display: flex;
+	align-items: center;
 
 }
 
@@ -378,26 +389,23 @@ span {
 
 
 	width: 300px;
+
 	box-shadow: 0px 5px 10px rgba(56, 56, 56, 0.315);
 	border-radius: 1em 1em 1em 1em;
 }
 
 .activityimg {
-	height: 400px;
-	position: relative;
+	height: 80%;
 	width: 100%;
+	position: relative;
 	object-fit: cover;
 	border-radius: 1em 1em 0em 0em;
+	
 
 }
 
 .activityimg img {
-	object-fit: cover;
-	position: relative;
-	border-radius: 1em 1em 0em 0em;
-	max-width: 100%;
-	width: 100%;
-	max-height: 100%;
+
 	height: 500px;
 }
 
@@ -413,8 +421,8 @@ a {
 
 
 .card-activity2 {
-
-	width: 300px;
+	width: 280px;
+	max-width: 100%;
 	box-shadow: 0px 5px 10px rgba(56, 56, 56, 0.315);
 	border-radius: 1em 1em 1em 1em;
 
@@ -423,7 +431,7 @@ a {
 .activityimg2 img {
 	object-fit: cover;
 	position: relative;
-	max-width: 100%;
+	width: 100%;
 	max-height: 100%;
 	height: 600px;
 
@@ -435,6 +443,7 @@ a {
 	position: relative;
 	object-fit: cover;
 	width: 100%;
+	max-width: 100%;
 	border-radius: 1em 1em 0em 0em;
 }
 
@@ -445,12 +454,14 @@ a {
 	justify-content: space-around;
 
 
+
 }
 
 .overlaycard {
 	display: flex;
 	flex-direction: column;
-	gap: 3em
+	gap: 1em;
+	 
 }
 
 footer {
@@ -459,6 +470,7 @@ footer {
 	justify-content: space-evenly;
 	background-color: #f2f2f2;
 	padding-bottom: 2em;
+	
 }
 
 footer ul {
@@ -480,18 +492,209 @@ footer h5 {
 @media screen and  (max-width:992px) {
 
 	body {
+		
 		margin: auto;
 	}
 
 	#part1 {
 		margin: 1em;
-}
+	
+	}
+	#part1 h1 {
+		font-size: 1.3em;
+		
+	}
 		main
 	 {
-		margin: 2em;
+		margin: 1.5em;
+		
+	}
+	/* search bar */
+	form {
+		
+		margin-top: 2em;
+		margin-bottom: 2em;
+	}
+	
+	form i {
+		background-color: #f2f2f2;
+		padding: 1em;
+		border-radius: 1em 0em 0em 1em;
+		border: #f2f2f2 2px solid;
+	
+	}
+	
+	form .search {
+		padding: 0.9em;
+		border: #f2f2f2 2px solid;
+	
+	}
+	
+	form p {
+		padding: 1em;
+		font-size: 1em;
 		
 	}
 	
+	.search::placeholder {
+		font-size: 1em ;
+	}
+	#info {
+		margin-left: 1em;
+	}
+
+		.container{
+		display: flex;
+		flex-direction: column-reverse;
+
+	}
+	/* popular apartment  */
+	.contenairpopular {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		
+	}
+
+	.sectionpopular {
+		margin: auto;
+		margin-bottom: 1em;
+		width: 770px;
+		padding: 0.4em;
+	}
+
+	.hébergement {
+
+		margin: auto;
+		margin-bottom: 1em;
+		width: 760px
+
+	}
+
+	.card {
+		margin: 1em;
+		height: 160px;
+		width:180px;
+		padding: 4px;
+		background-color: white;
+		max-width: 100%;
+		min-width: 150PX;
+
+	}
+
+	.card-image {
+		height: 80px;
+
+	}
+
+	.card-body h4 {
+		margin-bottom: 1%;
+		margin-top: 4%;
+		padding: 0%;
+		font-size: 1em;
+		font-weight: bold;
+	}
 
 
+	.card2-image {
+		width: 40%;
+		height: 90px;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.card-container {
+
+		width: 300px;
+		height: 100px;
+		padding: 5px;
+		background-color: white;
+		box-shadow: 0px 5px 10px rgb(56, 56, 56);
+		border-radius: 1em 1em 1em 1em;
+		
+	}
+
+	.card2-body h4 {
+		font-size: 0.8em;
+	}
+
+	.card2-body p {
+		font-size: 0.7em;
+	}
+
+
+	.contenairpopular {
+		display: flex;
+		align-items: center;
+	}
+
+	/* LIST ACTIVITY */
+
+	.listactivity {
+		display: flex;
+		justify-content: center ;
+		gap: 1EM;
+		margin: auto;
+	}
+
+	/* Card1 */
+
+	.card-activity1 {
+		width: 150px; 
+		height: 300px ;
+		box-shadow: 0px 5px 10px rgba(56, 56, 56, 0.315);
+		border-radius: 1em 1em 1em 1em;
+	}
+	.activityimg {
+		
+		height: 230px;
+		position: relative;
+		object-fit: cover;
+		border-radius: 1em 1em 0em 0em;
+		
+	}
+	.activityimg img {
+
+		height: 200px;
+	}
+	.activitytitle {
+		margin: 0em;
+	}
+
+ /* Card2 */
+	.activityimg2 img {
+		object-fit: cover;
+		position: relative;
+		max-height: 100%;
+
+	}
+
+	.card-activity2 {
+		width: 200px;
+		max-width: 100%;
+			
+	}
+
+	.activityimg2  {
+		object-fit: cover;
+		position: relative;
+		height: 100px;
+	}
+	.card-activity2 h4
+	{
+		padding:5px ;
+		margin: 5px;
+		font-size: 0.9em;
+	}
+	.overlaycard {
+		gap:1em;
+		padding:0em;
+	
+	}
+	.sectionactivity
+	{ 
+		margin: 3em;
+	}
 }
+
+	
