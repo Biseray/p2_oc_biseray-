@@ -260,7 +260,7 @@ article:hover {
 	box-sizing: border-box;
 	padding-left: 1em;
 	margin-bottom: 2em;
-	margin-bottom: 2%;
+	
 	font-size: 0.8em;
 }
 
@@ -663,8 +663,11 @@ footer h5 {
 		height: 200px;
 		
 	}
-	.activitytitle {
-		margin: 0em;
+	.activitytitle h4{
+		
+		padding:5px ;
+		margin: 5px;
+		font-size: 0.9em;
 	} 
 
  /* Card2 */
@@ -685,12 +688,6 @@ footer h5 {
 		object-fit: cover;
 		position: relative;
 		height: 100px;
-	}
-	.card-activity2 h4
-	{
-		padding:5px ;
-		margin: 5px;
-		font-size: 0.9em;
 	}
 	.overlaycard {
 		gap:1em;

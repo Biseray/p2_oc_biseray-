@@ -123,75 +123,111 @@ main h2 {
     font-size: 1em
 }
 
+/* hébergement */
+
 
 .hébergement {
 	margin: auto;
 	display: flex;
+    align-items: center;
 	flex-direction: column;
-	background-color: #f2f2f2;
-	border-radius: 1em;
-	padding: 1em;
-	width: auto;
+	background-color: #ffffff;
+	border-radius: 0em;
+	padding: 0em; 
+	width: 100%;
 }
+
+
 #containerarticle {
 
 	display: flex;
-	flex-direction:column;
+	flex-direction: column;
 	justify-content: center;
 	flex-wrap: wrap;
 	position: relative;
-	width: auto;
+	width: 100%;
+    
 	max-width: auto;
 	min-width: 60px;
-    
   
-  
+}
+
+/* card  */
+
+
+.card {
+	margin: 1em 2em 1em 2em  ;
+	width:100%;
+    height: 140px;
+	padding: 5px;
+}
+
+.card-body {
+	text-align: left;
+	box-sizing: border-box;
+	padding-left: 1em;
+	margin-bottom: -2em;
+	font-size: 0.8em;
+}
+
+.card-body h4 {
+	
+	margin: 0; 
+	padding: 0%;
+	font-size: 1.2em;
+	font-weight: bold;
+
+
+}
+.card-body p {
+
+	padding: 0em;
+    margin: 0em;
+	font-size: 1em;
+	font-weight: normal;
+}
+
+
+.card-image img {
+	
+	position: absolute;
+	max-width: 100%;
+	width: 100%;
+	max-height: 100%;
+}
+
+/* listpopular */
+.listactivity {
+	width: 100%;
+	display: flex;
+    flex-direction: column;
+	justify-content: space-around;
 }
 .contenairpopular {
 	display: flex;
 	flex-direction: column;
+    margin: 1em;
 }
 
 .sectionpopular {
 	display: flex;
 	flex-direction: column;
 	background-color: #f2f2f2;
-	border-radius: 1em;
-	padding: 1em;
+	border-radius: 0em; 
+	padding: 0em;
+    margin: 0em;
 	width: auto;
 	
 }
 
-#containerarticle {
+/* activity  */
 
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	flex-wrap: wrap;
-	position: relative;
-	width: auto;
-	max-width: auto;
-	min-width: 60px;
-    
-  
-  
-}
-
-.listactivity {
-	width: 100%;
-	display: flex;
-    flex-direction: column;
-	justify-content: space-around;
-
-
-
-}
 
 .card-activity1  {
 
 
 	width: 100%;
-    height: 80%;    
+    height: 100%;    
     max-width: 100%;
 	box-shadow: 0px 5px 10px rgba(56, 56, 56, 0.315);
 	border-radius: 1em 1em 1em 1em;
@@ -217,10 +253,26 @@ main h2 {
     box-shadow: 0px 5px 10px rgba(56, 56, 56, 0.315);
     border-radius: 1em 1em 1em 1em;
 }
+
+
+/* card hébergement  */
+
+#containerarticle {
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	position: relative;
+	width:  100%;
+	
+    
 }
 
 
 
+.card-container {
+    width: 100%;
+}
 
-
-
+}
