@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +7,12 @@
     <title>Booki</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mobile.styles.css">
   </head>
   <body>
     <!-- HEADER  -->
     <header>
-      <img src="images/logo/Booki.png" alt="logoBooki">
+      <img src="images/logo/Booki@3x.png" alt="logoBooki">
       <nav>
         <ul>
           <li>
@@ -30,14 +31,18 @@
       <form action="searchbar">
         <i class="fa-solid fa-location-dot"></i>
         <input type="search" placeholder="Marseille, France" class="search">
-        <p>Recherche</p>
+        <p class="searchtext">Recherche</p>
+       <div class="iconesearch"> 
+        <i class="fa-solid fa-magnifying-glass "></i>
+      </div>
       </form>
     </section>
     <!-- FILTERS -->
     <main>
       <h2>Filtres </h2> 
+      <div class="listfilters">
       <div class="filtresbtn">
-        <i class="fa-solid fa-money-bill-wave"></i>
+        <i class="fa-solid fa-money-bill-wave hide"></i>
         <p>Économique</p>
       </div>
       <div class="filtresbtn">
@@ -51,7 +56,7 @@
       <div class="filtresbtn">
         <i class="fa-solid fa-dog"></i>
         <p>Animaux autorisés</p>
-      </div>
+      </div></div>
     </main>
     <div id="info">
       <i class="fa-solid fa-info"></i>
