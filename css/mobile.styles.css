@@ -14,7 +14,13 @@
             flex-direction: column;
             justify-content:center;
         }
-
+        .logodesktop  {
+            display: none;
+            
+        }
+        .logomobile {
+            display: block;
+        }
         header img {
             text-align: center;
             
@@ -32,10 +38,14 @@
         text-align: center;
     
     }
-    
-    nav ul { padding-left: 0em;
-      
+   
+    nav ul { 
+        padding-left: 0em;
+        display: flex;
+        justify-content: center;
+        
     }
+     
 
     nav li:hover {
         width: 100%;
@@ -61,15 +71,14 @@
         display: none;
         cursor: pointer;
     }
-    .fa-magnifying-glass
-     {
+    .fa-magnifying-glass{
         cursor: pointer;
         margin-left:-1em ;
         background-color: #0065FC;
         color: white;
-	padding: 1.1em;
-    border: none;
-	border-radius: 1em 1em 1em 1em;
+        padding: 1.1em;
+        border: none;
+        border-radius: 1em 1em 1em 1em;
 	
     }
 
