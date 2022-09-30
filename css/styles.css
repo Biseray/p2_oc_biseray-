@@ -25,7 +25,7 @@ header {
 	justify-content: space-between;
 }
 
-.logomobile{ 
+.logomobile {
 	display: none;
 }
 
@@ -58,12 +58,14 @@ nav a:hover {
 	padding-right: 1em;
 	padding-left: 1em;
 }
+
 .searchbartext h1 {
 	font-size: 1.4em;
-	margin: 1em 0em 0.4em 0em; 
+	margin: 1em 0em 0.4em 0em;
 }
 
-h1, p {
+h1,
+p {
 	padding: 0%;
 	margin: 0%;
 }
@@ -91,7 +93,7 @@ form .search {
 	padding: 1.1em;
 	align-items: center;
 	border: #f2f2f2 2px solid;
-	
+
 }
 
 form p {
@@ -116,8 +118,8 @@ form p {
 .filters {
 	align-items: center;
 	display: flex;
-	
-	
+
+
 }
 
 .listfilters p {
@@ -131,7 +133,7 @@ form p {
 .listfilters {
 	align-items: center;
 	display: flex;
-	
+
 
 }
 
@@ -163,7 +165,7 @@ form p {
 }
 
 .info {
-	
+
 	display: flex;
 	align-items: center;
 
@@ -214,8 +216,8 @@ h2 {
 	width: 100%;
 }
 
-.hebergement  h2 {
-	font-size: 1.2em ;
+.hebergement h2 {
+	font-size: 1.2em;
 }
 
 /* card article */
@@ -223,8 +225,9 @@ article:hover {
 	transform: scale(1.02);
 
 }
+
 /* listapartment + listpopularapartment  */
-main{
+main {
 	gap: 1.5em;
 	display: flex;
 	justify-content: center;
@@ -264,7 +267,7 @@ main{
 	background-color: white;
 	box-shadow: 0px 1px 10px rgba(56, 56, 56, 0.15);
 	border-radius: 1em 1em 1em 1em;
-	
+
 
 }
 
@@ -370,10 +373,8 @@ span {
 }
 
 .cardContainerPoluparApartment {
-
 	width: 240px;
 	padding: 3px;
-
 	background-color: white;
 	box-shadow: 0px 1px 10px rgba(56, 56, 56, 0.15);
 	border-radius: 1em 1em 1em 1em;
@@ -435,11 +436,12 @@ span {
 /* listactivity */
 .listactivity {
 	width: 100%;
-	
+
 	display: flex;
 	justify-content: space-between;
 
 }
+
 .sectionactivity h3 {
 	font-size: 0.8em;
 	margin: 0em;
@@ -461,8 +463,8 @@ a {
 
 }
 
-.activitytitle{
-	padding: 0.2em ;
+.activitytitle {
+	padding: 0.2em;
 
 }
 
@@ -475,7 +477,7 @@ a {
 	min-width: 50%;
 	border-radius: 1em 1em 1em 1em;
 	box-shadow: 0px 5px 10px rgba(56, 56, 56, 0.315);
-	
+
 }
 
 .bigactivityimg {
@@ -485,7 +487,7 @@ a {
 	width: 100%;
 	max-width: 100%;
 	border-radius: 1em 1em 0em 0em;
-	
+
 }
 
 
@@ -522,8 +524,6 @@ a {
 
 
 .mediumActivityImg {
-	object-fit: cover;
-	position: relative;
 	width: 100%;
 	height: 125px;
 	position: relative;
@@ -539,7 +539,7 @@ footer {
 	display: flex;
 	background-color: #f2f2f2;
 	padding-bottom: 2em;
-	gap: 10em;
+	gap: 8em;
 
 
 }
@@ -548,21 +548,17 @@ footer ul {
 	margin-left: 1em;
 	list-style: none;
 	padding: 0px;
-	
 
-}
-
-footer p {
-	font-size: 0.7em;
 }
 
 footer li {
 	padding: 4px;
+	font-size: 0.8em;
 
 }
 
 footer h2 {
-	font-size: 1.2em;
+	font-size: 1em;
 	font-weight: bold;
 	margin-bottom: 0.5em;
 }
@@ -572,6 +568,11 @@ footer h2 {
 	body {
 
 		margin: auto;
+	}
+
+	header {
+		margin-right: 1em;
+		margin-left: 1em;
 	}
 
 	.searchbartext {
@@ -584,7 +585,7 @@ footer h2 {
 
 	}
 
-	
+
 
 	/* search bar */
 	form {
@@ -604,7 +605,7 @@ footer h2 {
 	form .search {
 		padding: 1em;
 		border: #f2f2f2 2px solid;
-		
+
 
 	}
 
@@ -631,20 +632,21 @@ footer h2 {
 
 
 	/* listfilters   */
-	
+
 	.filters {
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
 		margin: auto;
 	}
+
 	.listfilters {
 		flex-direction: row;
 		flex-wrap: wrap;
-		margin:0%;
+		margin: 0%;
 	}
 
-	.filters h2 { 
+	.filters h2 {
 		margin-bottom: 0em;
 		margin-left: 1em;
 	}
@@ -654,17 +656,32 @@ footer h2 {
 	/* popular apartment  */
 
 	.cardContainerPoluparApartment {
-		width: 250px;
-		height: 100px;
+		width: 600px;
+		height: 180px;
 		padding: 3px;
-	 
+
 	}
+
 	.containerpopular {
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		align-items: center;
-		padding: 0em 2em 0em 2em ;
+		justify-content: space-evenly;
+		padding: 0em 2em 0em 2em;
+	}
 
+
+	.card-popular-apartment {
+		display: flex;
+		align-items: center;
+
+
+	}
+
+	.card-popular-apartment img {
+		width: 40%;
+		object-fit: cover;
+		border-radius: 1em 0em 0em 1em;
 	}
 
 	.titlepopular {
@@ -672,50 +689,56 @@ footer h2 {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		margin: 1em 2em 1em 2em;
+		margin: 1em 7em 1em 7em;
 		padding: 0%;
-		font-size: 0.9em;	
-	
+		font-size: 1.3em;
+
 	}
 
 	.sectionpopular {
-		margin:auto;
-		width: 95%;
-		padding: 0em 0em 1.5em 0em;
-		
+		margin: auto;
+		width: 100%;
+		padding: 3em 0em 3em 0em;
+		border-radius: 0em;
+
 	}
+
 	.ImgCardPopular {
-		width: 40%;
-		height: 100px;
+		height: 180px;
 		position: relative;
 		overflow: hidden;
 	}
 
 	.cardPopularbody h3 {
-		font-size: 0.8em;
+		font-size: 1.2em;
+		margin-top: 0em;
 	}
 
 
 	.cardPopularbody p {
-		font-size: 0.7em;
+		font-size: 1em;
+		margin-top: 0.5em;
+	}
+
+	.StarRatingPopular {
+		margin-top: 1.5em;
+		font-size: 0.9em;
 	}
 
 
 	/* contenaire hebergement  */
 	.hebergement h2 {
-		margin-left: 1em;
+		margin-left: 5em;
+		font-size: 1.2em;
 	}
 
-	
-
 	.hebergement {
-
 		display: flex;
 		justify-content: center;
 		margin: auto;
 		padding: 0em;
 		margin-bottom: 1em;
-		width: 95%; 
+		border-radius: 0em;
 	}
 
 	.ContainerArticleHebergement {
@@ -726,43 +749,63 @@ footer h2 {
 		flex-wrap: wrap;
 		margin: 0em;
 		padding: 0em;
-		gap: 1em;
-			
+		gap: 2em;
+
 	}
 
 	.CardHebergement {
 
-		width: 220px;
-		height: 170px;
+		width: 340px;
+		height: 240px;
 		padding: 3px;
 		margin: 0em;
 		max-width: 100%;
 		background-color: white;
 		box-shadow: 0px 1px 10px rgba(56, 56, 56, 0.432);
 		border-radius: 1em 1em 1em 1em;
-	
+
 	}
-	
+
 	.cardImageHebergement {
-		height: 100px ;
+		height: 160px;
 
 	}
 
 	.cardHebergementbody h3 {
-		margin-bottom: 1%;
+		margin-bottom: 2%;
 		padding: 0%;
-		font-size: 0.8em;
+		font-size: 1.1em;
 		font-weight: bold;
 	}
 
+	.cardHebergementbody p {
+		font-size: 0.8em;
+		margin-bottom: 2%;
+
+	}
+
+	.StarRatingHebergement {
+		font-size: 0.8em;
+	}
+
+	.otherapartement {
+		margin-left: 6em ;
+
+	}
 
 
 	/* LIST ACTIVITY */
 
+	.sectionactivity h2 {
+		margin-top: 0em;
+		margin-left:2em ;
+	}
 	.listactivity {
 		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
 		justify-content: center;
-		gap: 0.5em;
+		gap: 2em;
 		margin: auto;
 		max-width: 100%;
 	}
@@ -770,9 +813,9 @@ footer h2 {
 	/* big card  */
 
 	.BigCardActivity {
-		width: 200px;
-		height: 300px;
-		
+		width: 320px;
+		height: 390px;
+
 		box-shadow: 0px 5px 10px rgba(56, 56, 56, 0.315);
 		border-radius: 1em 1em 1em 1em;
 		max-width: 100%;
@@ -780,9 +823,9 @@ footer h2 {
 
 	.bigactivityimg {
 		max-width: 100%;
-		height: 230px;
+		height: 340px;
 		max-width: 100%;
-		
+
 		position: relative;
 		object-fit: cover;
 		border-radius: 1em 1em 0em 0em;
@@ -800,16 +843,16 @@ footer h2 {
 	/* car small */
 
 	.SmallCardActivity {
-		width: 200px;
+		width: 320px;
 		max-width: 100%;
-		
+
 	}
 
 
 	.SmallActivityImg {
 		object-fit: cover;
 		position: relative;
-		height: 80px;
+		height: 120px;
 		max-width: 100%;
 		max-height: 100%;
 	}
@@ -817,20 +860,20 @@ footer h2 {
 
 	/* card medium */
 	.MediumCardActivity {
-		width: 200px;
+		width: 320px;
 		max-width: 100%;
 
 	}
 
-	
+
 
 	.mediumActivityImg {
 		object-fit: cover;
 		position: relative;
-		height: 100px;
+		height: 150px;
 		max-width: 100%;
 		max-height: 100%;
-		
+
 	}
 
 
@@ -843,4 +886,5 @@ footer h2 {
 	.sectionactivity {
 		margin: 3em
 	}
+
 }

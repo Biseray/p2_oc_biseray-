@@ -67,14 +67,14 @@
         border-top: none;
     }
 
-    /* searchbar  */  
-   
+    /* searchbar  */
+
     form {
         display: flex;
         justify-content: center;
         margin: 0em;
-    } 
-    
+    }
+
     form .fa-location-dot {
         cursor: pointer;
         background-color: #f2f2f2;
@@ -82,7 +82,7 @@
         border-radius: 1em 0em 0em 1em;
         border: #f2f2f2 3px solid;
 
-    } 
+    }
 
     form .search {
         font-size: 0.8em;
@@ -91,7 +91,7 @@
         align-items: center;
         border: #f2f2f2 2px solid;
         width: 70%;
-        
+
     }
 
     .search::placeholder {
@@ -120,8 +120,8 @@
         border: none;
         border-radius: 1em 1em 1em 1em;
     }
-    
-     .searchbartext h1 {
+
+    .searchbartext h1 {
         font-size: 1.3em;
         margin: 0.5em;
         margin-right: 2em;
@@ -131,7 +131,7 @@
         margin: 0.8em;
         margin-top: 0em;
         padding: 0em;
-        font-size:  0.9em;
+        font-size: 0.9em;
     }
 
 
@@ -170,18 +170,19 @@
 
     .filters h2 {
         font-size: 1em;
-     margin-left: 0.5em;
+        margin-left: 0.5em;
     }
 
     /* info*/
     .info {
         display: flex;
         align-items: flex-start;
-        
+
     }
+
     .info i {
-      
-      
+
+
         height: 1em;
         width: 1.2em;
         padding: 4px;
@@ -189,13 +190,14 @@
         border: #f2f2f2 1px solid;
         border-radius: 100%;
     }
+
     .info p {
-        padding-top: 0px  ;
+        padding-top: 0px;
     }
 
     /* hébergement */
-    main{
-        gap: 0em; 
+    main {
+        gap: 0em;
     }
 
     .hebergement {
@@ -210,7 +212,7 @@
     }
 
 
-    .ContainerArticleHebergement{
+    .ContainerArticleHebergement {
 
         display: flex;
         align-items: center;
@@ -279,9 +281,12 @@
     .listactivity {
         width: 100%;
         display: flex;
-        flex-direction: column;
+
         justify-content: center;
-    align-items: center;    }
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
     .containerpopular {
         margin: 1.5em;
@@ -302,7 +307,7 @@
         width: auto;
 
     }
-    
+
 
     /* card popular  */
 
@@ -360,17 +365,21 @@
 
     }
 
-    .StarRatingPopular{ 
-        padding-top:4em ;
-        
+    .StarRatingPopular {
+        padding-top: 4em;
+
     }
 
     /* activity  */
     .sectionactivity {
-		margin: 0em; 
+        margin: 0em;
         align-items: center;
-	}
+    }
 
+    .sectionactivity h3 {
+        font-size: 1em;
+        padding: 0.3em;
+    }
 
     /* big card  */
     .BigCardActivity {
@@ -379,8 +388,9 @@
         max-width: 100%;
         box-shadow: 0px 5px 10px rgba(56, 56, 56, 0.315);
         border-radius: 1em 1em 1em 1em;
-    }  
-     .bigactivityimg {
+    }
+
+    .bigactivityimg {
         height: 140px;
 
     }
@@ -393,10 +403,10 @@
 
     .SmallCardActivity {
         width: 340px;
-        
-        
+
+
     }
-    
+
     /*  medium card  */
     .mediumActivityImg {
         height: 140px;
@@ -404,14 +414,14 @@
 
     .MediumCardActivity {
         width: 340px;
-        
+
     }
 
-    .titleallactivity { 
-        margin: 1em ;
+    .titleallactivity {
+        margin: 1em;
     }
- 
-   /* Footer  */
+
+    /* Footer  */
 
     footer {
         flex-direction: column;
@@ -424,21 +434,18 @@
         font-size: 1.2em;
         font-weight: bold;
         margin-bottom: 0.5em;
-        margin-top:0em;
-    
-    
+        margin-top: 0em;
+
     }
-    
+
     footer ul {
         margin: 1em;
         margin-left: 2em;
-    
     }
+
     .otherapartement {
         margin: 1.5em;
         margin-left: 2em;
-        
-    
     }
 
 }
