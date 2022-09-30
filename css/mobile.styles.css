@@ -9,6 +9,7 @@
 
     /* header  */
     header {
+        margin:0% ;
         padding: auto;
         display: flex;
         flex-direction: column;
@@ -199,7 +200,9 @@
     main {
         gap: 0em;
     }
-
+    .hebergement h2 {
+        margin-left: 1.3em;
+    }
     .hebergement {
         margin: auto;
         display: flex;
@@ -278,6 +281,9 @@
     }
 
     /* listpopular */
+
+  
+    
     .listactivity {
         width: 100%;
         display: flex;
@@ -310,6 +316,9 @@
 
 
     /* card popular  */
+    .titlepopular{
+        margin: 0.5em;
+    }
 
     .cardPopularbody p {
         font-size: 0em;
@@ -366,7 +375,7 @@
     }
 
     .StarRatingPopular {
-        padding-top: 4em;
+        padding-top: 1.5em;
 
     }
 
@@ -417,8 +426,8 @@
 
     }
 
-    .titleallactivity {
-        margin: 1em;
+    .sectionactivity h2 {
+        margin-left: 1em;
     }
 
     /* Footer  */
